@@ -9,7 +9,8 @@ WORKDIR /app
 ADD . /app
 
 # Install dependencies
-RUN pip install -r requirements.txt
+RUN pip install pycaret
+RUN pip install streamlit
 
 # copying all files over
 COPY . /app
